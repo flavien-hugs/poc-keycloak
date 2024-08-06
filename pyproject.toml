@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "poc-keycloak"
+version = "0.1.0"
+description = "Poc keycloak management with python-keycloak package"
+authors = ["Flavien HUGS <flavienhugs@pm.me>"]
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-keycloak = "^4.3.0"
+python-slugify = "^8.0.4"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.26.0"
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
